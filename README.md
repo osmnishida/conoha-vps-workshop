@@ -62,7 +62,7 @@ ConoHa VPS（Ubuntu 24.04・メモリ4GB）に、次の2つを HTTPS で公開�
 
 ```bash
 ssh -i ~/.ssh/conoha_ws_ed25519 root@<IPアドレス>
-git clone <このリポジトリのURL> vps-setup
+git clone https://github.com/osmnishida/conoha-vps-workshop.git vps-setup
 cd vps-setup
 bash 01-base.sh workshop        # 途中で sudo 用パスワードを決める
 ```
@@ -81,7 +81,7 @@ sudo whoami                     # root と出れば OK
 ### 3〜5. 作業用ユーザーで、HTTPS・Dify・Next.js
 
 ```bash
-git clone <このリポジトリのURL> vps-setup
+git clone https://github.com/osmnishida/conoha-vps-workshop.git vps-setup
 cd vps-setup
 bash 02-web-front.sh auto <メールアドレス>       # 最後に出る https://… の URL をメモ
 bash 03-dify.sh                                  # 約4分。https://<ホスト名>/install で管理者を作成
